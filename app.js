@@ -4,7 +4,7 @@ var app = express();
 app.set("view engine", "jade");
 
 app.get("/",function(req,res){
-	res.send("hola mundo");
+	res.render("index",{hola:"hola hanmilton"});
 });
 
 app.listen(8080);
